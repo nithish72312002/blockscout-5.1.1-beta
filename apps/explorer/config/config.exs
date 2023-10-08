@@ -13,7 +13,7 @@ config :explorer,
   decode_not_a_contract_calls: System.get_env("DECODE_NOT_A_CONTRACT_CALLS") == "true"
 
 config :explorer, Explorer.Counters.AverageBlockTime,
-  enabled: true,
+  enabled: false,
   period: :timer.minutes(10)
 
 config :explorer, Explorer.ChainSpec.GenesisData, enabled: true
